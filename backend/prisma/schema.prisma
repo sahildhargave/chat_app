@@ -42,7 +42,7 @@ model  Chatroom {
 }
 
 model  Message{
-	id  Int   @id @default
+	id  Int   @id @default(autoincrement())
 	content String
 	imageUrl   String?
 	userId     Int 
